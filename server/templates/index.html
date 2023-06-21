@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>Votación</title>
+    </head>
+    <body>
+        <div> Si votos: <span id="si"> {{ votos["si"] }} </span></div>
+        <div> No votos: <span id="no"> {{ votos["no"] }} </span></div>
+        <hr>
+        <button data-voto="si">Si</button>
+        <button data-voto="no">No</button>
+    </body>
+</html>

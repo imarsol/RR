@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES" style="font-size:14pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="../fotos/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8967c3cadc.js" crossorigin="anonymous"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=traductor"></script>
+</head>
+<body>
+<div id="principal">
+    <nav>
+    <img src="../fotos/logo.png" width="80px" height="80px">
+        <ul>
+            <li><i class="fas fa-home"></i><a href="../inicio.html">Inicio</a></li>
+            <li><i class="fas fa-utensils"></i><a href="../html/cocina.html">Cocina</a></li>
+            <li><i class="fas fa-users"></i><a href="../html/about.html">¿Quiénes somos?</a></li>
+            <li><i class="fas fa-address-book"></i><a href="../html/contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <header id="contacto">
+        <p class="titulo"> Contacta con nosotros </p>
+        <p class="caja"> Queremos escucharte </p>
+    </header>
+
+    <br>
+    <div style="position:absolute;right: 0; padding: 50px;">
+        <form> <!-- Falta añadir el post to action...-->
+
+            <input type="text" name="nombre" value="" aria-required="true" size="51" aria-invalid="false" placeholder="Nombre*">
+            <br><br>
+            <input type="email" name="correo" value="" aria-required="true" aria-invalid="false" placeholder="Dirección de correo*">
+            <input type="tel" name="telefono" pattern="[0-9]{9}" placeholder="Teléfono*">
+            <br><br>
+            <textarea name="mensaje" cols="54" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-required="true" aria-invalid="false" placeholder="Mensaje*"></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="envio" style="position:absolute;right: 0;">
+        
+     </form>
+    </div>
+
+    <div id="redes">
+
+        <div>
+            <p> 
+                Si te surje alguna duda sobre cualquiera de nuestras recetas o estás interesado en que subamos algún plato específico, rellena nuestro
+                formulario y nos pondremos en contacto contigo la antes posible.
+            </p>
+            <br>
+            <p><b> Teléfono: </b> (+34)698419959 </p>
+            <p><b> Sede central y oficinas: </b> Camí de Vera, s/n, 46022 València</p>
+            <br>
+            <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.539527593481!2d-0.34327992458288575!3d39.47973023257169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60487c5d604077%3A0x150fdf31fdc5a6f6!2sUniversidad%20Polit%C3%A9cnica%20de%20Valencia%20(UPV)!5e0!3m2!1ses!2ses!4v1640290997033!5m2!1ses!2ses"
+             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </center>
+        </div>
+
+        <h4> Síguenos: </h4>
+        
+            <a href="https://twitter.com/upv" target="_blank"><img src="../fotos/twitter.png" width="40px" height="40px"></a>
+            <a href="https://www.instagram.com/instaupv" target="_blank"><img src="../fotos/instagram.png" width="40px" height="40px"></a>
+        
+    </div>
+</body>
+</html>

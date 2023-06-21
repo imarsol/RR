@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-ES" style="font-size:14pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruben's Recipes</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="fotos/logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8967c3cadc.js" crossorigin="anonymous"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=traductor"></script>
+</head>
+<body>
+<div id="principal">
+    <nav>
+    <img src="fotos/logo.png" width="80px" height="80px">
+        <ul>
+            <li><i class="fas fa-home"></i><a href="#">Inicio</a></li>
+            <li><i class="fas fa-utensils"></i><a href="html/cocina.html">Cocina</a></li>
+            <li><i class="fas fa-users"></i><a href="html/about.html">¿Quiénes somos?</a></li>
+            <li><i class="fas fa-address-book"></i><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <p id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/tOyo1V6Q5qU?autoplay=1" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+<div id="recetas"><br>
+    <div id="google_traductor"></div>
+    <h2>Recetas</h2><br>
+    <h4>En esta sección podéis observar distintos tipos <br>de recetas hechas por el prestigioso cocinero Rubén.</h4><br>
+    <div class="fila">
+        <a href="html/paella.html"><img alt="paella" src="fotos/paella.png" width="300px" height="300px"></a>
+        <a href="html/arrozmeloso.html"><img alt="arroz con pollo" src="fotos/arrozmeloso.png" width="300px" height="300px"></a>
+        <a href="html/tortilla.html"><img alt="tortilla" src="fotos/tortilla.png" width="300px" height="300px"></a>
+        <a href="html/sushi.html"><img alt="sushi" src="fotos/sushi.png" width="300px" height="300px"></a>
+        <a href="html/tarta.html"><img alt="tarta" src="fotos/tarta.png" width="300px" height="300px"></a>
+    </div>
+</div>
+<div class="cookies">
+    <img src="fotos/cookies.png" alt="acuerdo de cookies">
+    <div class="content">
+      <header>Política de Cookies</header>
+      <p>Esta web utiliza cookies para asegurar la mejor experiencia posible en nuestra web.</p>
+      <div class="buttons">
+        <button class="item">Lo entiendo.</button>
+        <a href="#" class="item">Saber más</a>
+      </div>
+    </div>
+  </div>
+<script>
+    function traductor() {
+        new google.translate.TranslateElement("google_traductor");
+    }
+
+    const cookieCaja = document.querySelector(".cookies"),
+    acuerdo = cookieCaja.querySelector("button");
+
+    acuerdo.onclick = ()=>{
+      document.cookie = "CookieBy=RR; max-age="+60*60*24*30; //la duración de la cookie es de un mes luego expira
+      if(document.cookie){ //si la cookie se ha creado ocultamos la caja
+        cookieCaja.classList.add("hide"); 
+      }
+      else{ 
+        alert("La cookie no se puede configurar! Por favor, desbloquea este sitio web desde la configuración de cookies de tu navegador.");
+      }
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=RR"); //revisamos la cookie
+    checkCookie != -1 ? cookieCaja.classList.add("hide") : cookieCaja.classList.remove("hide"); //ocultamos la caja si se ha creado la cookie sino la mostramos
+
+</script>
+</body>
+</html>

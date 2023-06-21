@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../fotos/cocina.png");
+    background-size: cover;
+}
+
+#principal #video{
+    margin-top: 272px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#recetas{
+    text-align: center;
+}
+
+#google_traductor{
+    text-align: right;
+    margin-right:20px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0005;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.5s all;
+}
+
+nav ul li:hover{
+    background-color: #a9e159;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+
+i[class^='fas']{
+    margin-left: 20px;
+}
+
+#principal #infopaella{
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 11em;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2em;
+    border: 10px inset grey
+}
+
+#principal #infopaella img{
+    float: left;
+}
+#principal #infopaella h2{
+    font-family: Impact;
+}
+
+#principal #infoarrozmeloso{
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 11em;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2em;
+    border: 10px inset grey
+}
+
+#principal #infoarrozmeloso img{
+    float: left;
+    width: 220px;
+    height: 220px;
+}
+
+.cookies{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    max-width: 365px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.cookies.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection{
+    color: #fff;
+    background: #FCBA7F;
+}
+
+.cookies img{
+    max-width: 90px;
+}
+
+.content header{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.content p{
+    color: #858585;
+    margin: 5px 0 20px 0;
+}
+
+.content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #a9e159;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover{
+    transform: scale(0.97);
+}
+
+.buttons .item{
+    margin: 0 10px;
+}
+
+.buttons a{
+    color: #a9e159;
+}
+
+#contacto{
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.titulo{
+    font-size: xx-large;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    margin-top: 1%;;
+}
+
+.caja, 
+.boton{
+    color: white;
+    background: black;
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"]{
+    border: 1px solid #a9e159;
+    background: #a9e159;
+    color: black;
+    padding: 15px;
+}
+
+form textarea{
+    border: 1px solid #a9e159;
+    background: #a9e159;
+    color: black;
+    padding: 15px;
+}
+
+form input[type="submit"]{
+    color: white;
+    background: black;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: monospace;
+    margin-right: 50px;
+}
+
+#redes{
+    padding: 50px;
+    padding-right: 15cm;
+    text-align: justify;
+}
+
+#equipo{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.titulo1{
+    text-transform: lowercase;
+    margin-top: 3%;
+    font-size: xx-large;
+    font-family:'Times New Roman';
+    font-style: italic;
+}
+
+hr{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+    margin-top: 2mm;
+    border-color: black;
+}
+
+.contact{
+    text-transform:uppercase; 
+    font-size: x-large;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.perfil{
+    color: black;
+    margin: 10mm;
+    margin-bottom: 5mm;
+    border: 1px solid darkslategray;
+    padding: 40px;
+    min-width: 200px;
+}
+
+.logos{
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 2mm;
+    width: 25px;
+    height: 25px;
+}
+
+#foto{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.rol{
+    font-family: monospace;
+    margin-top: 1mm;
+    margin-bottom: 2mm;
+}
+
+#about{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
